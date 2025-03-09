@@ -10,7 +10,7 @@ export class InvestmentService {
   valueEndOfYear: number;
   annualInvestment: number;
   totalInterest: number;
-  }[] | undefined >(undefined);
+  }[] | undefined>(undefined);
 
   calculateInvestmentResults(data: InvestmentInput) {
     const { initialInvestment, duration, expectedReturn, annualInvestment } = data;
@@ -32,7 +32,6 @@ export class InvestmentService {
         totalAmountInvested: initialInvestment + annualInvestment * year,
       });
     }
-
-    this.resultData.set(annualData);
+      this.resultData.set(annualData);
   }
 }
